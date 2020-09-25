@@ -1,1 +1,14 @@
-<h1> {{title}} </h1>
+{# Cargamos la layout #}
+{% extends 'layouts/layout.html' %}
+
+{# Bloque para el título de la página #}
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{# Bloque para cargar el contenido #}
+{% block content %}
+
+    <h1> {{title}} </h1>
+
+{% endblock content %}
