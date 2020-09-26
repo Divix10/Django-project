@@ -29,12 +29,13 @@
 
     <nav>
         <ul>
-            <li>
-                <a href="{% url 'inicio' %}">Inicio</a>
-            </li>
-            <li>
-                <a href="{% url 'about' %}">Sobre nosotros</a>
-            </li>
+            {# Recorremos el context para sacar el título de la página y la url #}
+            {% for page in pages  %}
+                <li>
+                    <a href=""> {{page.1}}</a>
+                </li>
+            {% endfor %}
+            
         </ul>
     </nav>
 
