@@ -29,6 +29,9 @@
 
     <nav>
         <ul>
+            <li>
+                <a href="{% url 'inicio' %}">Inicio</a>
+            </li>
             {# Recorremos el context para sacar el título de la página y la url #}
             {% for page in pages  %}
                 <li>
